@@ -10,7 +10,7 @@ function App() {
             try {
               const res:any = await axios.get('https://dummy-json.mock.beeceptor.com/posts');
               const res2:any = await axios.get("https://secureone.anvayaa.in/api/categories/viewAllCategoriesDetailsByUser");
-              console.log('resss',res?.data);
+              console.log('resss',res?.data,res2?.data);
             } catch(error:any) {
               console.log(error?.response)
             }
